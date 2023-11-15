@@ -32,13 +32,13 @@ namespace MOD9.Controllers
         {
             if (userDTO == null)
             {
-                return BadRequest("Email/Password Invalid");
+                return BadRequest("Username/Password Invalid");
             }
             
-            var user=UserData.userList.FirstOrDefault(u=>u.Email==userDTO.Email);
+            var user=UserData.userList.FirstOrDefault(u=>u.Username==userDTO.Username);
             if (user == null)
             {
-                return NotFound("Email tidak ditemukan");
+                return NotFound("Username tidak ditemukan");
             }
 
             if(user.Password!=userDTO.Password)

@@ -6,7 +6,7 @@ namespace MOD9.Data
     {
         public static List<UserDTO> userList = new List<UserDTO>
         {
-             new UserDTO{Id=1, Email="ibra@gmail.com", Password="rahasia123"},
+             new UserDTO{Id=1, Username="Ibra", Password="rahasia123"},
              
         };
 
